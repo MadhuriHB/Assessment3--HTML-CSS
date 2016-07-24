@@ -1,0 +1,51 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Application-form</title>
+        <h1>Career Builder</h1> 
+        <h2>Find the right job. Right now.</h2>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+
+    <body>
+
+    <fieldset>
+        <legend>Please fill the form below</legend>
+        <div class="container">
+            
+            <form action="/application" method="POST">
+                
+                <label for="firstname">First Name:</label>
+                <input id="firstname", type="text", name="textfield" placeholder='First name'><br>
+                <br>
+
+                <label for="lastname"><strong>Last Name:</strong></label>
+                <input id="lastname", type="text", name="textfield" placeholder='Last name'><br><br>
+                
+                
+                <label for="salary">Expected Salary:</label>
+                <input id="salary", type="text", name="textfield" placeholder='Salary'><br><br>
+                
+                
+                <label for="jobskills">Select the job you want to apply for
+                </label>
+                <select id="jobskills" name="select">
+
+                    <option value="1">Software Engineer</option>
+                    <option value="2">QA Engineer</option>
+                    <option value="3">Product Manager</option>
+
+                </select>
+
+        </div>                              
+                
+                <input id="submit" type="submit" value="Submit">
+                 
+            </form>
+       
+    </fieldset>
+
+    </body>
+    
+</html>
